@@ -9,7 +9,7 @@ FROM frolvlad/alpine-oraclejdk8:slim
 # if they need to actually write in the filesystem.
 VOLUME /tmp
 
-ADD dockerdemo-0.0.1-SNAPSHOT.jar app.jar
+ADD /target/dockerdemo-0.0.1-SNAPSHOT.jar app.jar
 
 # You can use a RUN command to "touch" the jar file so that it has a file
 # modification time (Docker creates all container files in an "unmodified"
